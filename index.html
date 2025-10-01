@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sabeer Alam's Portfolio - Front-End Developer specializing in modern web technologies. Explore my projects, skills, and get in touch!">
+    <meta name="keywords"
+        content="Sabeer Alam, Front-End Developer, Portfolio, Web Development, HTML, CSS, JavaScript, Bootstrap, GitHub">
+    <meta name="author" content="Sabeer Alam">
+    <title>Sabeer Alam Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+    <!-- Enhanced Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand accent" href="#">Sabeer</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Download Resume Button -->
+                <a href="#" class="resume-btn" id="downloadResume">Resume</a>
+
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sabeer-alam-a443a632b/" class="social-icon linkedin"
+                        target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Sabeer-Alam961" class="social-icon github" target="_blank"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sabeeralam999/" class="social-icon instagram" target="_blank"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Theme Toggle Button -->
+    <button class="theme-toggle-fab" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <!-- Interactive Hero Section -->
+    <section id="hero" class="section">
+        <!-- Floating Particles -->
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Content on Left -->
+                <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+                    <div class="hero-content">
+                        <!-- Animated Title -->
+                        <h1 class="hero-title">
+                            <span class="hero-greeting">Hello, I'm</span><br>
+                            <span class="hero-name">Sabeer Alam</span>
+                        </h1>
+
+                        <!-- Typewriter Effect Container -->
+                        <div class="typewriter-container">
+                            <span class="role-icon" id="currentIcon">
+                                <i class="fas fa-code"></i>
+                            </span>
+                            <span class="typewriter-text" id="typewriterText"></span>
+                            <span class="typewriter-cursor"></span>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="hero-subtitle">
+                            I enjoy turning ideas into interactive and user-friendly digital experiences.
+                            With a mix of design sense and coding skills, I love creating projects that are
+                            both functional and visually engaging.
+                        </p>
+
+                        <!-- Action Buttons -->
+                        <div class="button-group">
+                            <a href="#contact" class="btn-modern">Get In Touch</a>
+                            <a href="#projects" class="btn-outline">View My Work</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image on Right -->
+                <div class="col-lg-6 col-md-12 order-1 order-lg-2">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                            class="img-fluid" alt="Profile Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title" data-aos="zoom-in">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=400&fit=crop"
+                        class="img-fluid rounded-3" alt="About Image" style="box-shadow: var(--shadow-lg);">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="card-modern">
+                        <h3 style="color: var(--accent-primary); margin-bottom: 1.5rem;">Curious Learner & Developer
+                        </h3>
+                        <p class="mb-3">
+                            I am a Computer Science student with a growing interest in web development and
+                            problem-solving.
+                            My skill set includes HTML, CSS, Bootstrap, JavaScript, Python, and SQL, and I enjoy
+                            applying them
+                            to build clean, functional, and creative projects.
+                        </p>
+                        <p>
+                            I believe in continuous learning and love exploring new technologies that help me improve as
+                            a developer.
+                            For me, coding is not just about writing programs—it’s about bringing ideas to life in a way
+                            that makes an impact.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="zoom-in">Skills</h2>
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="fade-up">
+                    <div class="skill-card">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h5>HTML5</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <h5>CSS3</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card">
+                        <i class="fab fa-bootstrap skill-icon"></i>
+                        <h5>Bootstrap</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card">
+                        <i class="fab fa-js-square skill-icon"></i>
+                        <h5>JavaScript</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card">
+                        <i class="fab fa-github skill-icon"></i>
+                        <h5>GitHub</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-card">
+                        <i class="fas fa-pencil-ruler skill-icon"></i>
+                        <h5>UI/UX</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-python skill-icon"></i>
+                        <h5>Python</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-card">
+                        <i class="fas fa-solid fa-database skill-icon"></i>
+                        <h5>SQL</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Education</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="card-modern">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle p-3 me-3"
+                                style="background: var(--accent-gradient) !important;">
+                                <i class="fas fa-graduation-cap text-white"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--accent-primary); margin: 0;">Bachelor of Computer Science</h4>
+                                <p class="mb-0" style="color: var(--text-secondary);">Karachi Institute of Economics and
+                                    Technology</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge rounded-pill px-3 py-2"
+                                style="background: rgba(59, 130, 246, 0.1); color: var(--accent-primary);">2022 -
+                                Present</span>
+                        </div>
+                        <p class="mt-3 mb-0">Currently pursuing my degree with a focus on Web Development, Algorithms,
+                            and Human-Computer Interaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
+                            class="project-image" alt="Portfolio Project">
+                        <div class="project-content">
+                            <h5 style="color: var(--accent-primary);">Personal Portfolio</h5>
+                            <p style="color: var(--text-secondary); margin-bottom: 1rem;">A responsive portfolio website
+                                built with HTML, CSS, and Bootstrap 5, featuring modern design and smooth animations.
+                            </p>
+                            <a href="#" class="btn-outline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card">
+                        <img src="images/expense-tracker.png" alt="Expense Tracker" class="project-image">
+                        <div class="project-content">
+                            <h3 class="color: var(--accent-primary);">Expense Tracker</h3>
+                            <p class="color: var(--text-secondary); margin-bottom: 1rem;">
+                                A web-based application to track daily expenses, categorize spending, and visualize
+                                financial data with charts. Built with HTML, CSS, JavaScript, and Firebase.
+                            </p>
+                            <a href="https://github.com/Sabeer-Alam961/Computer-Science-Projects"
+                                class="btn btn-outline btn-sm" target="_blank">
+                                <i class="bi bi-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="card-modern">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn-modern">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <!-- Newsletter Section -->
+            <div class="newsletter-section">
+                <h4><i class="fas fa-envelope me-2"></i>Stay Updated</h4>
+                <p>Subscribe to get notified about new projects, tech insights, and development tips straight to your
+                    inbox.</p>
+
+                <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="newsletter-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Subscribe
+                    </button>
+                </form>
+
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Thanks for subscribing! You'll hear from us soon.</span>
+                </div>
+
+                <div class="newsletter-features">
+                    <div class="newsletter-feature">
+                        <i class="fas fa-code"></i>
+                        <span>Development Tips</span>
+                    </div>
+                    <div class="newsletter-feature">
+                        <i class="fas fa-rocket"></i>
+                        <span>New Projects</span>
+                    </div>
+                    <div class="newsletter-feature">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Tech Insights</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-section">
+                        <h5>About Sabeer</h5>
+                        <p>Passionate developer crafting digital experiences with modern technologies. Specializing in
+                            web development with a focus on user-centric design and performance optimization.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-section">
+                        <h5>Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                            <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                            <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                            <li><a href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-section">
+                        <h5>Get In Touch</h5>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>alamsabeer05@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+92 3327782097</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Karachi, Pakistan</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Available for remote work</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12">
+                        <p>&copy; 2025 Sabeer. All rights reserved. Built with passion and modern web technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
